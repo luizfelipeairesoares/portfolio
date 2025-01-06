@@ -2,7 +2,6 @@
 //  portfolioUITests.swift
 //  portfolioUITests
 //
-//  Created by Luiz Aires Soares on 2024-12-02.
 //
 
 import XCTest
