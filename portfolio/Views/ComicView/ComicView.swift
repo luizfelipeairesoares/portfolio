@@ -28,7 +28,7 @@ struct ComicView: View {
                         HStack(alignment: .top, spacing: 8) {
                             ForEach(0..<viewModel.comics.count, id: \.self) { index in
                                 ComicCardView(comic: viewModel.comics[index])
-                                    .id(index)
+                                    .id(index+1)
                             }
                         }
                         .scrollTargetLayout()
@@ -38,7 +38,7 @@ struct ComicView: View {
                     .onChange(of: position) {
                         viewModel.loadMoreContent($position.wrappedValue ?? 0)
                     }
-                    Text("Showing \($position.wrappedValue ?? 0) of \(viewModel.total)")
+                    Text("Showing \($position.wrappedValue ?? 1) of \(viewModel.total)")
                         .font(.footnote)
                         .frame(alignment: .center)
                         .padding([.top, .bottom], 8)

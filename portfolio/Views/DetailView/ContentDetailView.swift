@@ -39,14 +39,10 @@ struct ContentDetailView: View {
                 )
             }
             List(viewModel.character.comics.items, id: \.name) { comic in
-                NavigationLink {
-                    viewModel.showComics()
-                } label: {
-                    Text(comic.name)
-                        .foregroundColor(.black)
-                        .font(.body)
-                        .frame(alignment: .leading)
-                }
+                Text(comic.name)
+                    .foregroundColor(.black)
+                    .font(.body)
+                    .frame(alignment: .leading)
             }
             .scrollContentBackground(.hidden)
             .contentMargins(.top, 0)
