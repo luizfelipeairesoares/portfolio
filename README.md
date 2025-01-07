@@ -12,7 +12,7 @@ You can see the Characters in a list, tap in one of them to see a detail view, s
 
 ### Improvements I want to work on this month
 - Update test cases and improve code coverage to at least 70%.
-- Improve UI/UX adding a Splash screen.
+- ~~Improve UI/UX adding a Splash screen.~~ :white_check_mark:
 - Use Protocols for dependency injection.
 
 
