@@ -9,8 +9,12 @@
 	</dict>
 	<key>UILaunchScreen</key>
 	<dict>
+		<key>UIColorName</key>
+		<string>AccentColor</string>
 		<key>UIImageName</key>
-		<string></string>
+		<string>LaunchScreenImage</string>
+		<key>UIImageRespectsSafeAreaInsets</key>
+		<false/>
 	</dict>
 </dict>
 </plist>
