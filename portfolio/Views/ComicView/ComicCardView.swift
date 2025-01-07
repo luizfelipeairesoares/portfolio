@@ -6,7 +6,6 @@
 
 import SwiftUI
 
-
 struct ComicCardView: View {
 
     private let comic: Comic
