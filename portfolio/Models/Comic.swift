@@ -12,7 +12,7 @@ struct Comic: Codable, Identifiable {
     let digitalId: Int
     let title: String
     let issueNumber: Int
-    let description: String
+    let description: String?
     let isbn: String
     let pageCount: Int
     let thumbnail: MarvelImage?

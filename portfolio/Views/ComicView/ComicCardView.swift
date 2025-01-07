@@ -38,9 +38,9 @@ struct ComicCardView: View {
                 .font(.title)
                 .frame(alignment: .center)
                 .padding([.leading, .trailing], 16)
-            if !comic.description.isEmpty {
+            if let comicDesc = comic.description, !comicDesc.isEmpty {
                 ScrollView(.vertical) {
-                    Text(comic.description)
+                    Text(comicDesc)
                         .foregroundColor(.black)
                         .font(.body)
                         .frame(alignment: .leading)
