@@ -1,0 +1,26 @@
+{
+    "code": 1,
+    "status": "ok",
+    "data": {
+        "offset": 0,
+        "limit": 0,
+        "total": 20,
+        "count": 20,
+        "results": [{
+            "id": 0,
+            "digitalId": 0,
+            "title": "Mock Comic",
+            "issueNumber": 1,
+            "description": null,
+            "isbn": "0",
+            "pageCount": 10,
+            "thumbnail": null,
+            "creators": {
+                "available": 0,
+                "items": [],
+                "returned": 0
+            }
+        }]
+    }
+}
+

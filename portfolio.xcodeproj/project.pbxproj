@@ -41,6 +41,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Mock/listCharactersResponse.json,
+				Mock/listComicsResponse.json,
 			);
 			target = A440799E2CFE89FA002B415C /* portfolio */;
 		};
