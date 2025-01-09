@@ -27,6 +27,7 @@
 		A440799F2CFE89FA002B415C /* portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44079B02CFE89FB002B415C /* portfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = portfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44079BA2CFE89FB002B415C /* portfolioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = portfolioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E253A22D307A69004BF61A /* portfolio.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = portfolio.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -99,6 +100,7 @@
 		A44079962CFE89FA002B415C = {
 			isa = PBXGroup;
 			children = (
+				A4E253A22D307A69004BF61A /* portfolio.xctestplan */,
 				A44079A12CFE89FA002B415C /* portfolio */,
 				A44079B32CFE89FB002B415C /* portfolioTests */,
 				A44079BD2CFE89FB002B415C /* portfolioUITests */,
