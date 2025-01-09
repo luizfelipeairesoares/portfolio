@@ -5,13 +5,18 @@
         "offset": 0,
         "limit": 0,
         "total": 20,
-        "count": 20
+        "count": 20,
         "results": [{
             "id": 0,
             "name": "Mock Hero",
-            "desc": null,
-            "resourceURI": null
-            "thumbnail": null
+            "description": null,
+            "resourceURI": null,
+            "thumbnail": null,
+            "comics": {
+                "available": 0,
+                "items": [],
+                "returned": 0
+            }
         }]
     }
 }

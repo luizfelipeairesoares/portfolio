@@ -13,29 +13,31 @@ import Foundation
 
     private var cancellables: Set<AnyCancellable> = []
 
-    @Test func fectchCharacters() throws {
+    @Test func fectchCharacters() async throws {
         let configuration = URLSessionConfiguration.default
         configuration.protocolClasses = [MockURLProtocol.self]
         createMockURLHandler(resource: "listCharactersResponse")
         let session = URLSession(configuration: configuration)
-        var errorRaised: Error?
         var characters: [Characters] = []
-        CharactersService(session: session)
-            .listCharacters(page: 0)
-            .map { $0.data.results }
-            .sink { completion in
-                switch completion {
-                case .failure(let error):
-                    errorRaised = error
-                case .finished:
-                    break
+        try await confirmation { confirmation in
+            CharactersService(session: session)
+                .listCharacters(page: 0)
+                .map { $0.data.results }
+                .sink { completion in
+                    switch completion {
+                    case .failure(let error):
+                        print(error)
+                    case .finished:
+                        break
+                    }
+                } receiveValue: { response in
+                    characters = response
+                    #expect(characters.isEmpty == false)
+                    confirmation()
                 }
-            } receiveValue: { response in
-                characters = response
-            }
-            .store(in: &cancellables)
-        #expect(errorRaised == nil)
-        #expect(characters.isEmpty == false)
+                .store(in: &cancellables)
+            try await Task.sleep(for: .seconds(2))
+        }
     }
 
     // MARK: - Private

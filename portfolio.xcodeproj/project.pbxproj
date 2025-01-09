@@ -37,6 +37,13 @@
 			);
 			target = A440799E2CFE89FA002B415C /* portfolio */;
 		};
+		A4E2539D2D3071FF004BF61A /* Exceptions for "portfolioTests" folder in "portfolio" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Mock/listCharactersResponse.json,
+			);
+			target = A440799E2CFE89FA002B415C /* portfolio */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -50,6 +57,9 @@
 		};
 		A44079B32CFE89FB002B415C /* portfolioTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A4E2539D2D3071FF004BF61A /* Exceptions for "portfolioTests" folder in "portfolio" target */,
+			);
 			path = portfolioTests;
 			sourceTree = "<group>";
 		};
